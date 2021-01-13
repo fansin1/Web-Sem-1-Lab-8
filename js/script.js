@@ -38,7 +38,9 @@ forms.forEach(form => {
     form.querySelectorAll('input[type="text"').forEach(input => {
       input.value = '';
     });
-    alert('Отправлено!');
+    let textarea = form.querySelector('textarea')
+    console.log(textarea)
+    alert(`Отправлено! ${textarea.value}`);
   });
 });
 
